@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif', serif
+}
+
+body
+{
+    height: 100%;
+}
+
+.content
+{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin:0 auto;
+    justify-content:center;
+}
+
+
+
+.mainLogin
+{
+    width: 30%;
+    display: flex;
+    align-items: center;
+  
+}
+.mainLogin > img 
+{
+    width: 30rem;
+    height: 20rem;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+.view-login
+{
+    width: 20%; 
+    padding: 0 2%;
+}
+                    /*inscriçao*/
+.inscriçao
+{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    align-self: baseline;
+    min-width: 300px;
+}
+
+.inscriçao > h2
+{
+    font-size: 2.5rem;
+    color: #3886f4;
+    margin-bottom: 2rem;
+}
+ h2::after
+{   content: '';
+    display: block;
+    height: 2px;
+    width: 200px;
+    background-color: #3886f4;
+    margin: 0 auto;
+}
+
+
+
+.inscriçao > p 
+{
+    margin: 0.6rem 0;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 2%;
+    color: #3886f4;
+}
+.inscriçao > span{
+    margin: 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(104, 103, 103, 0.884);
+}
+
+.inscriçao b{
+    color: #3886f4;
+    cursor: pointer;
+}
+
+.inscriçao > button 
+{
+    width: 8rem;
+    margin-top: 2rem;
+    background-color: #005ce4;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: #f7fcff;
+    font-weight: bold;
+}
+                /*input type */
+
+.inscriçao > p > input[type=text],
+.inscriçao > p > input[type=password]
+{
+    padding: .2rem;
+    margin-top: .3rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    color: #010305;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.inscriçao > p > input
+{
+    padding: 2%;
+}
+
+.inscriçao > p > input::placeholder
+{
+    font-size: ligth;
+}
+
+.inscriçao > p > input[type=text]:focus{
+    font-size: 16px;
+    transition: 380ms ;
+    opacity: 1.0;
+    position: relative;
+    transform: translateX(-20px);
+   
+}
+.inscriçao > p > input[type=password]:focus{
+    font-size: 16px;
+    transition: 380ms;
+    opacity: 0.9;
+    transform: translateX(-20px);
+}
+
+.inscriçao > button:hover
+{
+    background-color: #0150c7fa;
+   
+}
+
+@media   (max-width:769px) {
+    .content{
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainLogin{
+     display: flex;
+     flex-direction: column;
+     
+    }
+    .mainLogin{
+        width: 100%;
+    }
+    .mainLogin img{
+        max-width: 300px;
+    }
+    .view-login{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+    .inscriçao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media (min-width:769px){
+    .mainLogin img{
+        width: 100%;
+    }
+    .mainLogin{
+      padding: 0 2%;
+    }
+}
+
+
